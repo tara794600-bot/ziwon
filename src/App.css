@@ -630,7 +630,7 @@ align-items: center;
   .진행전,
   .진행후 {
     width: 100%;          /* 화면 기준 */
-    max-width: 320px;     /* 모바일 안정 최대값 */
+    max-width: 280px;     /* 모바일 안정 최대값 */
     height: auto;
     margin: 0 auto;       /* 중앙 정렬 */
   }
@@ -666,12 +666,14 @@ margin-top: 5px;
 .중소{
 font-size: 18px;
 margin-top: 5px;
+margin-right: 10px;
 
 }
 .통합{
 font-weight:580;
 font-size: 20px;
 margin-top: 5px;
+margin-right: 10px;
 
 }
 .고객{
