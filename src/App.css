@@ -629,7 +629,7 @@ align-items: center;
   }
   .진행전,
   .진행후 {
-    width: 100%;          /* 화면 기준 */
+    width: 80px;          /* 화면 기준 */
     max-width: 320px;     /* 모바일 안정 최대값 */
     height: auto;
     margin: 0 auto;       /* 중앙 정렬 */
@@ -679,7 +679,7 @@ margin-right: 10px;
 }
 .고객{
 margin-bottom: 25px;
-font-size: 30px;
+font-size: 20px;
 }
 
 .진행{
