@@ -504,9 +504,10 @@ color: #111111d2;
    📱 모바일 (768px 이하)
 =============================== */
 @media (max-width: 768px) {
+*{text-align: center;}
 
 .세이브{
-margin-left: -1px;
+margin-left: 3px;
 
 }
 
@@ -520,7 +521,7 @@ margin-left: 1px;
 .이자{
 font-size: 22px;
 font-weight: 700;
-margin-left: 3px;
+margin-left: 5px;
 }
 
 .억{
