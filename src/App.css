@@ -510,16 +510,19 @@ color: #111111d2;
  font-size: 1.2em; 
 height: 70svh;
 width:100%;
+margin-left: 1px;
 }
 
 .이자{
 font-size: 22px;
 font-weight: 700;
+margin-left: 1px;
 }
 
 .억{
     font-size:22px;
 font-weight: 700;
+margin-left: 1px;
 }
 
 
@@ -527,12 +530,14 @@ font-weight: 700;
 margin-top:50px;
 height: auto;
 width: 80%;
+margin-left: 1px;
 
   }
   .상담신청{
      margin-top:45px;
      height: auto;
 width: 80%;
+margin-left: 1px;
   }
   .육번{
     height: auto;
