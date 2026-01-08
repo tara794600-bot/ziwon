@@ -1,0 +1,1217 @@
+*{font-family: 'Noto Sans KR', sans-serif;}
+
+html, body {
+  margin: 0;
+  padding: 0;
+    overflow-x: hidden
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-top: 0;
+}
+
+
+
+.첫화면{
+background-image: url(./이미지/첫화면.png);
+ font-size: 1.2em; 
+ width: 100%;
+height: 800px;
+ background-size: 
+ cover; background-position: 
+ center; position: relative;
+}
+
+.이자{
+font-size: 45px;
+color: #ffffff;
+font-family: 'Noto Sans KR', sans-serif;
+font-weight: 900;
+ text-align: center;
+   margin: 0;
+  padding: 0;
+}
+
+.억{
+    font-size: 45px;
+    color:#1EA7E1;
+    font-family: 'Noto Sans KR', sans-serif;
+font-weight: 900;
+}
+
+.세이브{ 
+position: relative;
+right: -10px;
+bottom: -18px;
+
+}
+
+.이미지{
+  background-color: #ffffff;
+}
+.삼번{
+  background-color: #ffffffe1;
+}
+
+  .일번{
+ text-align: center;
+margin-top: 100px;
+
+  }
+  .상담신청{
+     text-align: center;
+     margin-top:90px;
+  }
+
+  .사번{
+
+  background-size: cover;
+  padding: 140px;
+  height: 650px;
+  text-align: center;
+  padding-bottom: 20px;
+  }
+
+  .석세스{
+font-size: 40px;
+color:  rgba(0, 0, 0, 0.753);  
+
+  }
+
+  .담은{
+font-size: 50px;
+font-weight:700;
+color: rgba(0, 0, 0, 0.753);  
+margin-top: 15px;
+  }
+
+  .한눈{
+font-size: 50px;
+font-weight:700;
+color:  rgba(0, 0, 0, 0.753);   
+}
+
+  .단{
+font-size: 30px;
+  text-align: center;
+  font-weight: 550;
+  color:#1f48b9;
+  margin-top: 50px;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-bottom: 100px;
+
+  }
+
+  .론{
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 33px;
+font-weight: 600;
+ margin-left: 30px;}
+
+  .근로{
+margin-left: 30px;
+  font-size: 20px;
+  margin-top: 20px;
+  }
+
+.table-wrapper {
+  width: 100%;
+  max-width: 800px;      /* ✅ 표만 고정 폭 */
+  margin: 0 auto;        /* 가운데 정렬 */
+}
+.approval-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f4f7fb;
+  text-align: center;
+}
+
+/* 헤더 */
+.approval-table thead {
+  background-color: #181683;
+}
+
+.approval-table th {
+  color: #fff;
+  padding: 14px 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* 바디 */
+.approval-table td {
+  padding: 12px 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* 둥근 헤더 */
+.approval-table thead th:first-child {
+  border-top-left-radius: 12px;
+}
+
+.approval-table thead th:last-child {
+  border-top-right-radius: 12px;
+}
+
+
+.rolling-body {
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+
+  width: 100%;
+  max-width: 800px;   /* table-wrapper랑 동일 */
+  margin: 0 auto;     /* ❌ margin-left 제거 */
+}
+.rolling-body table {
+  width: 100%;
+  animation: rollUp 18s linear infinite;
+}
+
+@keyframes rollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+@media (max-width: 768px) {
+  .table-wrapper {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+
+  .approval-table th,
+  .approval-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .rolling-body {
+    height: 180px;
+  }
+}
+
+
+.신청{  
+background-color: #f4f7fb;
+
+text-align: center;
+
+   }
+
+   .채무{
+color: #201e99ef;
+font-size: 40px;
+text-align: center;
+  font-weight: 610;
+ font-family: 'Noto Sans KR', sans-serif;
+ margin-bottom: 18px;
+   }
+
+
+  .대박표{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+
+
+  }
+.진행전{
+height: auto;
+width:800px;
+
+}
+
+.화살표{
+  height: auto;
+width:200px;
+margin-top: 60px;
+margin-right: -110px;
+margin-bottom: 60px;
+}
+
+.진행후
+{height: auto;
+width:800px;
+margin-top: 30px;
+margin-right: 20px;
+
+}
+
+.두달락{
+display: flex;
+flex-direction: row;
+margin-top: 100px;
+justify-content: center;
+margin-bottom: 50px;
+
+}
+
+.이미지{
+ margin-right: 400px;
+margin-left: 100px;
+}
+
+.김땡땡{
+font-size: 33px;
+color: #201e99ef;
+margin-top: 10px;
+}
+
+.메롱{
+position: relative;
+left: -50px;
+bottom: 10px;
+
+}
+
+.시옷{
+position: relative;
+top: -10px;
+left: 1px;
+
+
+}
+
+.중소{
+font-size: 23px;
+margin-top: 10px;
+white-space: nowrap;
+
+}
+.통합{
+font-weight:580;
+font-size: 35px;
+margin-top: 10px;
+white-space: nowrap;
+align-items: center;
+
+}
+.고객{
+text-align: center;
+color: #201e99f1;
+margin-bottom: 50px;
+font-size: 27px;
+margin-top:100px;
+white-space: nowrap;
+}
+
+.플라스{
+width: 80px;
+position: relative;
+right: -25px;
+top: 6px;
+
+}
+
+
+
+.진행{
+font-size:30px;
+padding-left: 200px;
+padding-top: 40px;
+padding-bottom: 10px;
+padding-top: 100px;
+color:#1f48b9;
+font-weight:600;
+}
+
+.본인{
+font-size: 40px;
+font-weight:700;
+margin-top:-25px;
+
+
+
+}
+
+.간단{
+font-size:40px;
+font-weight:700;
+color:#1f48b9;
+}
+
+
+.정리{
+font-size: 40px;
+font-weight:700;
+
+}
+
+.묶음{
+padding-top: 50px;
+padding-left: 200px;
+font-family: "Pretendard";
+}
+
+.정신 {
+  width: 100%;
+  background-color: #bdbbbb1f;}
+
+
+.정신1{
+  max-width: 1440px;   /* PC 최대 폭 */
+margin-right: -30px;
+}
+  
+
+.세입{
+  display: inline-block;
+background: linear-gradient(
+  180deg,
+  #0b48b8f1 0%,
+  #125ed1dc 50%,
+  #1a8be8b7 100%
+);
+color: white;
+font-size: 28px;
+padding-top: 80px;
+padding-bottom: 80px;
+padding-left: 30px;
+padding-right: 110px;
+border-radius: 80px 0px 0px 80px;
+margin-left: 150px;
+ position: relative;
+  right: -40px;
+
+
+}
+.삼번{
+display:inline-block;
+background-color: #bdbbbb00;
+ position: relative;
+  right: 200px;
+}
+
+.후에{
+  font-size: 20px;
+  padding-top: 10px;
+
+font-family: "Pretendard";
+}
+
+.후후에{  font-size: 20px;
+  padding-top: 10px;
+padding-left: 200px;
+font-weight:450;
+padding-bottom: 100px;
+}
+
+.조회{
+font-size: 30px;
+font-family: "Pretendard";
+font-weight:700;
+align-items: center;
+color: #111111d2;
+}
+
+.조회 {
+  font-size: clamp(16px, 1.5vw, 22px);
+  text-align: center;
+  color: #333;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 768px) {
+  .두달락 {
+    flex-direction: column;
+  }
+
+  .정신-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .진행전,
+  .진행후 {
+    max-width: 320px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .첫화면 {
+    height: auto;
+    min-height: 100vh;
+    padding: 40px 16px;
+  }
+
+  .이자 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .억 {
+    font-size: 28px;
+  }
+
+  .일번,
+  .상담신청 {
+    margin-top: 40px;
+  }
+
+  .사번 {
+    padding: 80px 20px;
+  }
+
+  .단 {
+    font-size: 20px;
+    margin-top: 140px;
+    margin-bottom: 40px;
+    
+  }
+
+  .table-wrapper,
+  .approval-table,
+  .rolling-body {
+    max-width: 100%;
+    table-layout: fixed;
+  }
+
+  .approval-table th,
+  .approval-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .rolling-body {
+    height: 180px;
+    margin-left: 0;
+  }
+
+  .채무 {
+    font-size: 22px;
+  }
+}
+
+
+
+/* ===============================
+   📱 모바일 (768px 이하)
+=============================== */
+@media (max-width: 768px) {
+
+
+.첫화면{
+ font-size: 1.2em; 
+height: 70svh;
+width:100%;
+}
+
+.이자{
+font-size: 22px;
+font-weight: 700;
+}
+
+.억{
+    font-size:22px;
+font-weight: 700;
+}
+
+
+  .일번{
+margin-top:50px;
+height: auto;
+width: 80%;
+
+  }
+  .상담신청{
+     margin-top:45px;
+     height: auto;
+width: 80%;
+  }
+  .육번{
+    height: auto;
+    width: 100%;
+  }
+
+  .사번{
+  height: 70vh;
+  width: 100%;
+  }
+  .인간{
+    height:auto;
+    width: 150px;
+  }
+
+  .단{
+font-size: 15px;
+  font-weight: 335;
+  margin-top: 140px;
+  margin-bottom: 30px;
+
+  }
+
+  .론{
+      font-size: 16px;
+font-weight: 400;
+ margin-left: 15px;}
+
+  .근로{
+margin-left: 15px;
+  font-size: 10px;
+  }
+
+   .채무{
+font-size: 20px;
+  font-weight: 410;
+ margin-bottom: 9px;
+   }
+.고객{
+  font-size: 25px;
+  width: 100%;
+}
+
+  .대박표{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+
+
+  }
+  .진행전,
+  .진행후 {
+    width: 100%;          /* 화면 기준 */
+    max-width: 320px;     /* 모바일 안정 최대값 */
+    height: auto;
+    margin: 0 auto;       /* 중앙 정렬 */
+  }
+
+  .화살표 {
+    width: 80px;          /* 고정 px (아이콘은 px가 맞음) */
+    height: auto;
+    margin: 8px auto;     /* 음수 margin ❌ */
+    display: block;
+  }
+
+.두달락{
+display: flex;
+flex-direction: column;
+margin-top: 50px;
+justify-content: center;
+margin-bottom: 25px;
+width: 100%!important;
+
+
+}
+
+.이미지{
+ margin-right: 0px;
+margin-left: 0px;
+}
+
+.김땡땡{
+font-size: 15px;
+margin-top: 5px;
+}
+
+.중소{
+font-size: 9px;
+margin-top: 5px;
+
+}
+.통합{
+font-weight:580;
+font-size: 10px;
+margin-top: 5px;
+
+}
+.고객{
+margin-bottom: 25px;
+}
+
+.진행{
+font-size:15px;
+padding-top: 20px;
+padding-bottom: 5px;
+padding-top: 50px;
+font-weight:700;
+}
+
+.본인{
+font-size: 20px;
+font-weight:700;
+margin-top:-15px;
+
+}
+.사번{
+  width:100% !important;
+  padding: 10px !important;
+}
+.간단{
+font-size:20px;
+font-weight:700;
+}
+
+
+.정리{
+font-size: 20px;
+font-weight:700;
+
+}
+
+.묶음{
+padding-top: 25px;
+}
+
+.정신1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* ⭐ 핵심 */
+  width: 100%;
+  margin: 0 auto;
+}
+.삼번 {
+  display: block;
+  width: 90%;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-sizing: border-box;
+  text-align: center;
+
+  /* ❌ 위치 이동 관련 전부 제거 */
+  position: static;
+}
+.세입 {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+
+  font-size: 14px;
+  border-radius: 80px 0 0 80px;
+  box-sizing: border-box;
+}
+.후에 {
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.후후에 {
+  font-size: 10px;
+  padding-top: 5px;
+  font-weight: 550;
+  padding-bottom: 50px;
+}
+
+.조회 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+}
+
+
+@media (max-width: 768px) {
+  .table-wrapper {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+
+  .approval-table th,
+  .approval-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .rolling-body {
+    height: 180px;
+  }
+    body {
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .container,
+  section,
+  div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.정신 {
+  width: 100%;
+  background-color: #bdbbbb1f;
+}
+
+.정신-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+.고객사례 {
+  width: 100%;
+}
+
+.고객사례-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+.고객사례-inner,
+.정신-inner,
+.신청-inner,
+.육번-inner{
+  max-width: 1200px;  /* ← 이게 황금값 */
+}
+.진행전,
+.진행후 {
+  width: 100%;
+  max-width: 520px;
+}
+
+/* 1) 새로 들어간 .inner 공통 레이아웃만 안정화 */
+.inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 2) 고객사례-inner / 정신-inner / 신청-inner / 육번-inner : "안에서만" 폭 제한 */
+.고객사례-inner,
+.정신-inner,
+.신청-inner,
+.육번-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 3) 고객사례 섹션: 기존 .두달락 구조 안 깨지게만 보정 */
+.고객사례 {
+  width: 100%;
+}
+
+/* 4) 정신 섹션: 기존 inline-block + right 트릭 유지하되,
+      inner가 폭을 잡아주게만 세팅 */
+.정신 {
+  width: 100%;
+}
+
+/* 5) 신청 섹션: inner 감싸도 중앙 유지 */
+.신청 {
+  width: 100%;
+}
+.신청-inner {
+  text-align: center;
+  padding: 80px 20px; /* 기존 느낌 유지용 */
+}
+
+/* 6) 육번 섹션: inner 안에 이미지 들어갔으니 가운데 정렬 */
+.육번-inner {
+  padding: 40px 20px;
+  text-align: center;
+}
+.육번 {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 7) (중요) 이미지들 기본 overflow 때문에 가로 삐져나오는 거 방지 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* =========================
+   ✅ 섹션 배경 가로 풀 확장 패치
+========================= */
+
+/* section은 무조건 화면 끝까지 */
+section,
+header {
+  width: 100%;
+}
+
+/* 배경이 있는 섹션들 명시적으로 */
+.첫화면,
+.정신,
+.신청,
+.사번 {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* inner는 가운데 고정 */
+.첫화면-inner,
+.정신-inner,
+.고객사례-inner,
+.신청-inner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* =========================
+   🔥 최상위 가로 가둠 해제 (핵심)
+========================= */
+
+.app {
+  width: 100%;
+  max-width: none;      /* ❗ 이게 핵심 */
+  margin: 0;
+  padding: 0;
+}
+/* 모든 section은 화면 전체 폭 */
+section {
+  width: 100%;
+}
+
+.고객사례 {
+  background-color: #fff;
+}
+
+.정신 {
+  background-color: #bdbbbb1f;
+}
+
+.사번섹션 {
+  background-image: url(./이미지/사번.gif);
+  background-size: cover;
+}
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+.사번 {
+  padding: 140px 0;
+}
+/* section은 배경만 담당 */
+section {
+  width: 100%;
+}
+
+/* inner가 콘텐츠 중앙 담당 */
+.inner {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 20px;
+}
+
+@media (max-width: 768px) {
+  .정신-inner {
+    display: flex;
+    flex-direction: column;   /* 세로 스택 */
+    align-items: center;      /* ⭐ 전체 중앙 */
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  /* 🔥 삼번 위치 이동 완전 제거 */
+  .삼번 {
+    position: static !important;
+    right: auto !important;
+    left: auto !important;
+
+    display: block !important;
+    width: 90% !important;
+    max-width: 360px !important;
+    margin: 0 auto !important;
+
+    text-align: center !important;
+    transform: none !important;
+  }
+
+  /* 🔥 삼번 안 텍스트 오른쪽 밀던 padding 제거 */
+  .삼번 .진행,
+  .삼번 .묶음,
+  .삼번 .후후에 {
+    padding-left: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .정신-inner {
+    display: flex;
+    flex-direction: column;   /* 세로 스택 */
+    align-items: center;      /* ⭐ 전체 중앙 */
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .정신-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .정신-inner > .삼번,
+  .정신-inner > .세입 {
+    width: 90%;
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  /* 1️⃣ 기준 컨테이너 고정 */
+  section.정신 > .inner.정신-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 auto !important;
+    padding: 40px 16px !important;
+
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+  }
+
+  /* 2️⃣ 삼번 / 세입 : 중앙 카드로 고정 */
+  section.정신 > .inner.정신-inner > .삼번,
+  section.정신 > .inner.정신-inner > .세입 {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 360px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+
+    text-align: center !important;
+  }
+}
+@media (max-width: 768px) {
+  .정신-inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .정신-inner > .삼번,
+  .정신-inner > .세입 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 768px) {
+  .삼번 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* 🔥 내용 중심 고정 */
+    text-align: center;
+
+    width: 90%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+    .삼번 .묶음 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    .삼번 p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+    .삼번 {
+    transform: translateX(-10px);
+  }
+  .삼번 {
+    text-align: center !important;
+  }
+   .삼번,
+  .삼번 * {
+    text-align: center !important;
+  }
+
+}
+@media (max-width: 768px) {
+  .삼번,
+  .삼번 p {
+    text-align: center !important;
+  }
+}
+@media (max-width: 768px) {
+  /* 🔥 삼번 위치 이동 완전 제거 */
+  .삼번 {
+    position: static !important;
+    right: auto !important;
+    left: auto !important;
+
+    display: block !important;
+    width: 90% !important;
+    max-width: 360px !important;
+    margin: 0 auto !important;
+
+    text-align: center !important;
+    transform: none !important;
+  }
+
+  /* 🔥 삼번 안 텍스트 오른쪽 밀던 padding 제거 */
+  .삼번 .진행,
+  .삼번 .묶음,
+  .삼번 .후후에 {
+    padding-left: 0 !important;
+  }
+}
+
+.육번섹션{
+background-color: #F9F9F9;
+}
+
+.세입 {
+  position: relative;
+  flex: 1;
+  overflow: visible;
+}
+
+/* 배경 확장 */
+.세입::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100vw;        /* 화면 끝까지 */
+  width: 100vw;
+  height: 100%;
+background: linear-gradient(
+  180deg,
+  #0b48b8f1 0%,
+  #125ed1dc 50%,
+  #1a8be8b7 100%
+  );
+  z-index: 0;
+}
+
+
+.박스{
+max-width: 300px;
+margin: 50px auto;
+padding: 80px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.08);    
+border-radius: 16px;
+background:linear-gradient(
+  180deg,
+0%   #F8FBFF,
+50%  #EEF5FF,
+100% #E6F0FF)
+}
+
+.박스 h2
+{
+color: #211eb9d8;
+margin-top: -35px;
+margin-bottom: 40px;
+
+}
+.박스 .사탕{
+margin-bottom: 80px;
+
+}
+
+
+
+
+.상담
+{margin-bottom: 70px;
+  margin-top: -30px;
+}
+
+label{
+display: block;
+font-size: 17px;
+font-weight: 500;
+text-align: left;
+margin-top: 20px;
+}
+
+input{
+width: 100%;
+padding: 13px;
+margin-top: 10px;
+border: 1px solid #ddd;
+transition: all 0.2s ease;
+outline: none;
+}
+
+input:focus{
+border-color:#4fa3caa2; 
+  box-shadow: 0 0 0 3px rgba(30,167,225,0.15);
+}
+.롱메{
+background-color: #0b48b8f1;
+margin-top: -30px;
+color: #ffffff;
+padding: 13px;
+width: 100%;
+font-size: 22px;
+border-radius: 7px;
+
+}
+.즉시{
+margin-top: 30px;
+font-size: 20px;
+font-weight: 600;
+color:#101011ab;
+
+
+}
+
+button:hover{
+transform: translateY(-2px);
+
+}
+
+.처음처럼{
+  background-color: #1ea6e100;
+  border:none;
+
+}
+button:focus{
+  border: none;
+  outline: none;
+}
+
+
+.hidden{
+opacity: 0;
+transform: translateY(50px);
+transition:  all 1s ease;
+}
+.show{
+opacity: 1;
+transform: translateY(0);
+}
+
+.scale-up{
+animation: scaleUp 3s ease-in-out infinite;}
+@keyframes scaleUp {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
