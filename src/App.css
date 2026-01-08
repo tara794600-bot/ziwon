@@ -535,7 +535,7 @@ font-size: 22px;
 font-weight: 700;
 margin-right: 60px;
 position: relative;
-top: -80px;
+top: -110px;
 
 }
 
@@ -545,7 +545,7 @@ font-weight: 700;
 margin-right: 60px;
   margin-bottom: 120px;
  position: relative;
-  top: -80px;
+  top: -110px;
 }
 
 .억{
@@ -553,6 +553,7 @@ margin-right: 60px;
 font-weight: 700;
 margin-left: 1px;
 margin-bottom: 80px;
+
 }
 
 
@@ -562,6 +563,8 @@ height: auto;
 width: 80%;
 margin-left: 1px;
   margin-bottom: 80px;
+   position: relative;
+  top: -80px;
 
   }
   .상담신청{
@@ -570,6 +573,8 @@ margin-left: 1px;
 width: 80%;
 margin-left: 1px;
   margin-bottom: 80px;
+   position: relative;
+  top: -80px;
   }
   .육번{
     height: auto;
