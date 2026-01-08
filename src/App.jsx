@@ -74,7 +74,7 @@ export default function App() {
        
 
           <p className="이자">이자 걱정, 이제 그만!</p>
-          <p className="이자">
+          <p className="이자1">
             최대 <span className="억">3억</span>까지 채무통합
           </p>
 

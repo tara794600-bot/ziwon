@@ -38,6 +38,16 @@ font-weight: 900;
   padding: 0;
 }
 
+.이자1{
+font-size: 45px;
+color: #ffffff;
+font-family: 'Noto Sans KR', sans-serif;
+font-weight: 900;
+ text-align: center;
+   margin: 0;
+  padding: 0;
+}
+
 .억{
     font-size: 45px;
     color:#1EA7E1;
@@ -523,8 +533,13 @@ margin-bottom: 80px;
 .이자{
 font-size: 22px;
 font-weight: 700;
-margin-right: 100px;
-margin-bottom: 80px;
+margin-right: 60px;
+
+}
+
+.이자1{
+
+  margin-bottom: 80px;
 }
 
 .억{
