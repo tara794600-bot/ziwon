@@ -633,7 +633,7 @@ align-items: center;
     max-width: 200px;     /* 모바일 안정 최대값 */
     height: auto;
     margin: 0 auto;       /* 중앙 정렬 */
-    margin-left: 100px;
+    margin-left: -50px;
   }
 
   .화살표 {
@@ -656,6 +656,7 @@ width: 100%!important;
 
 .플라스{
 margin-left: 100px;
+width: 100px;
 
 }
 
