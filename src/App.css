@@ -509,6 +509,7 @@ color: #111111d2;
 .세이브{
 margin-right: 120px;
 
+
 }
 
 .첫화면{
@@ -516,18 +517,21 @@ margin-right: 120px;
 height: 70svh;
 width:100%;
 margin-left: 1px;
+margin-bottom: 50px;
 }
 
 .이자{
 font-size: 22px;
 font-weight: 700;
 margin-right: 100px;
+margin-bottom: 50px;
 }
 
 .억{
     font-size:22px;
 font-weight: 700;
 margin-left: 1px;
+margin-bottom: 50px;
 }
 
 
