@@ -586,12 +586,12 @@ margin-left: 1px;
   width: 100%;
   }
 .석세스{
-font-size: 35px;
+font-size: 20px;
 }
-.담은{font-size: 40px;
+.담은{font-size: 30px;
 
 }
-.한눈{font-size: 40px;}
+.한눈{font-size: 30px;}
 
 
 
@@ -611,13 +611,14 @@ font-size: 15px;
   }
 
   .론{
-      font-size: 21px;
+      font-size: 15px;
 font-weight: 4050;
  margin-left: 15px;}
 
   .근로{
 margin-left: 15px;
-  font-size: 18px;
+  font-size: 25px;
+  font-weight: 4050;
   }
 
    .채무{
