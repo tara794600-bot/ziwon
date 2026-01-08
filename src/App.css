@@ -637,7 +637,7 @@ align-items: center;
   }
 
   .화살표 {
-    width: 80px;          /* 고정 px (아이콘은 px가 맞음) */
+    width: 80%;          /* 고정 px (아이콘은 px가 맞음) */
     height: auto;
     margin: 8px auto;     /* 음수 margin ❌ */
     display: block;
@@ -679,7 +679,7 @@ margin-right: 10px;
 }
 .고객{
 margin-bottom: 25px;
-font-size: 20px;
+font-size: 15px;
 }
 
 .진행{
