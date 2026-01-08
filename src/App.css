@@ -654,6 +654,12 @@ width: 100%!important;
 
 }
 
+.플라스{
+margin-left: 100px;
+
+}
+
+
 .이미지{
  margin-right: 0px;
 margin-left: 0px;
@@ -680,6 +686,7 @@ margin-right: 10px;
 .고객{
 margin-bottom: 25px;
 font-size: 15px;
+margin-left: 25px;
 }
 
 .진행{
