@@ -518,7 +518,7 @@ color: #111111d2;
 
 .세이브{
 margin-right: 120px;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 
 }
 
@@ -534,6 +534,8 @@ margin-bottom: 80px;
 font-size: 22px;
 font-weight: 700;
 margin-right: 60px;
+position: relative;
+top: -30px;
 
 }
 
