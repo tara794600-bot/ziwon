@@ -614,7 +614,7 @@ font-size: 20px;
  margin-bottom: 9px;
    }
 .고객{
-  font-size: 25px;
+  font-size: 20px;
   width: 100%;
 }
 
@@ -630,9 +630,10 @@ align-items: center;
   .진행전,
   .진행후 {
     width: 100%;          /* 화면 기준 */
-    max-width: 280px;     /* 모바일 안정 최대값 */
+    max-width: 320px;     /* 모바일 안정 최대값 */
     height: auto;
     margin: 0 auto;       /* 중앙 정렬 */
+    margin-left: 100px;
   }
 
   .화살표 {
