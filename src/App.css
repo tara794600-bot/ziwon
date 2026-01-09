@@ -456,7 +456,7 @@ color: #111111d2;
 @media (max-width: 768px) {
   .첫화면 {
     height: auto;
-    min-height: 100vh;
+    min-height: 100svh;
     padding: 40px 16px;
   }
 
