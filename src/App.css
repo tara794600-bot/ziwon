@@ -694,7 +694,7 @@ top: -0px;
 
 .메롱{
 align-items: center;
-margin-top: 25px;
+margin-top: 10px;
 margin-left: 70px;
 
 
@@ -741,7 +741,8 @@ top: -20px;
 .진행1{
 font-size:30px;
 font-weight:700;
-text-align: center;
+margin-right: 100px;
+margin-bottom: 50px;
 
 }
 
