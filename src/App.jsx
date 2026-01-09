@@ -121,6 +121,7 @@ export default function App() {
       <section className="정신 hidden">
         <div className="inner 정신-inner">
           <div className="삼번">
+            <p className="진행">채무통합</p>
             <p className="진행">진행절차를 모르시겠다고요?</p>
 
             <div className="묶음">
