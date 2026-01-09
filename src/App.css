@@ -644,7 +644,7 @@ align-items: center;
   }
   .진행전,
   .진행후 {
-    width: 50px!important ;         /* 화면 기준 */
+    width: 100px!important ;         /* 화면 기준 */
        /* 모바일 안정 최대값 */
     height: auto;
     margin: 0 auto;       /* 중앙 정렬 */
