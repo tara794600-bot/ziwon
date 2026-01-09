@@ -337,6 +337,13 @@ color:#1f48b9;
 font-weight:600;
 }
 
+.진행1{
+font-size:30px;
+color:#1f48b9;
+font-weight:600;
+
+}
+
 .본인{
 font-size: 40px;
 font-weight:700;
@@ -678,7 +685,7 @@ width: 100%!important;
   left: 30px;
 margin-right: 10px;
 width: 50px;
-margin-top: -10px;
+top: 20px;
 }
 
 
@@ -726,6 +733,8 @@ font-size:30px;
 padding-bottom: 5px;
 padding-top: 50px;
 font-weight:700;
+position: relative;
+top: 20px;
 }
 
 .진행1{
