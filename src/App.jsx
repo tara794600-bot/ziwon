@@ -4,7 +4,7 @@ import 상담신청 from "./이미지/상담신청.png";
 import 세이브 from "./이미지/세이브.png";
 import 일번 from "./이미지/일번.png";
 import 인간 from "./이미지/dlsrks.png";
-import 육번 from "./이미지/육번.gif";
+import 육번 from "./이미지/육번.jpg";
 import 진행전 from "./이미지/진행 전.png";
 import 진행후 from "./이미지/진행 후.png";
 import 화살표 from "./이미지/화살표.png";
