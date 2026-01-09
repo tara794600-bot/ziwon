@@ -862,7 +862,7 @@ margin-bottom: -50px;
 
 label
 {
-font-size: 100px;
+font-size: 200px;
 }
 
 
@@ -874,9 +874,9 @@ font-size: 100px;
   }
 
   input {
-    font-size: 35px;
+    font-size: 25px;
     height: 38px;
-    padding: 50px;
+    padding: 100px;
   }
 
   .롱메 {
