@@ -853,8 +853,8 @@ padding-top: 25px;
     width: 100%;
     max-width: 360px;
     scale: calc(0.9);
-    margin-right: 350px;
-    
+  position: relative;
+right: 350px;    
 
 
   }
