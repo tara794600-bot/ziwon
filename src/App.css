@@ -855,10 +855,21 @@ padding-top: 25px;
     scale: calc(0.75);
   position: relative;
 right: 50px;    
-margin-bottom: -30px;
-
+margin-bottom: -50px;
 
   }
+
+.상담{
+padding: 30px;
+}
+label
+{
+font-size: 22px;
+}
+
+
+
+
 
   .박스 h2 {
     font-size: 20px;
@@ -870,8 +881,8 @@ margin-bottom: -30px;
   }
 
   .롱메 {
-    font-size: 16px;
-    height: 53px;
+    font-size: 22px;
+    height: 60px;
   }
 
 .즉시{white-space: nowrap;
