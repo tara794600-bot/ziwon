@@ -841,6 +841,7 @@ padding-top: 25px;
   .박스 {
     padding: 24px;
     margin: 0 16px;
+    width: 320px;
   }
 
   .박스 h2 {
@@ -849,13 +850,21 @@ padding-top: 25px;
 
   input {
     font-size: 15px;
-    height: 44px;
+    height: 38px;
   }
 
   .롱메 {
     font-size: 16px;
-    height: 48px;
+    height: 53px;
   }
+
+.즉시{white-space: nowrap;
+
+
+
+}
+
+
 }
 
 
