@@ -227,7 +227,7 @@ export default function App() {
 
 <div className="상담">
 <label>연락처</label>
-<input type="tel" placeholder="연락처를 입력하세요."required pattern="^010-[0-9]{4}-[0-9]{4}$"title="010-XXXX-XXXX 형식으로 입력해주세요"/>
+<input type="tel" placeholder="연락처를 입력하세요."required pattern="^010[0-9]{4}[0-9]{4}$"title="010XXXXXXXX 형식으로 입력해주세요"/>
   </div>
 
  <button className="롱메"  type="submit">무료 상담신청</button>
