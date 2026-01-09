@@ -330,9 +330,9 @@ top: 6px;
 .진행{
 font-size:30px;
 padding-left: 200px;
-padding-top: 40px;
+
 padding-bottom: 10px;
-padding-top: 100px;
+
 color:#1f48b9;
 font-weight:600;
 }
@@ -341,6 +341,7 @@ font-weight:600;
 font-size:30px;
 color:#1f48b9;
 font-weight:600;
+padding-left: 200px;
 
 }
 
@@ -685,7 +686,7 @@ width: 100%!important;
   left: 30px;
 margin-right: 10px;
 width: 50px;
-top: 20px;
+top: -20px;
 }
 
 
@@ -734,7 +735,7 @@ padding-bottom: 5px;
 padding-top: 50px;
 font-weight:700;
 position: relative;
-top: 20px;
+top: -20px;
 }
 
 .진행1{
