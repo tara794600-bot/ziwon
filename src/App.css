@@ -871,20 +871,24 @@ font-size: 30px;
 
 
   .박스 h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   input {
     font-size: 25px;
     height: 38px;
-    padding: 150px;
+    padding: 200px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .롱메 {
-    font-size: 130px;
-    height: 60px;
+    font-size: 150px;
+    height: 80px;
      text-align: center;
+         margin-left: auto;
+    margin-right: auto;
   }
 
 .즉시{white-space: nowrap;
