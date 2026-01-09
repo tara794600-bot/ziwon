@@ -70,7 +70,7 @@ export default function App() {
   return (
     <div className="app">
       {/* ================== HERO ================== */}
-      <header className="첫화면 hidden" > <img src={세이브} alt="첫세이브론"className="세이브" />
+      <header className="첫화면 hidden" > <img src={첫세이브론} alt="첫세이브론"className="세이브" />
         <div className="inner 첫화면-inner">
        
 
