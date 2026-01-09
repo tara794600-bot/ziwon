@@ -844,8 +844,6 @@ padding-top: 25px;
 
 @media (max-width: 768px) {
   .박스 {
-    padding: 24px;
-    margin: 0 16px;
     width: 90%;
   }
 
