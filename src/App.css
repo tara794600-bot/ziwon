@@ -648,7 +648,7 @@ align-items: center;
        /* 모바일 안정 최대값 */
     height: auto;
     margin: 0 auto;       /* 중앙 정렬 */
-    margin-left: 0px;
+    margin-left: 20px;
   }
 
   .화살표 {
@@ -676,7 +676,7 @@ width: 50px;
 margin-top: -10px;
 }
 .시옷{
-margin-top: 30px;
+margin-top: 30px!important;
 
 
 
