@@ -876,12 +876,14 @@ font-size: 200px;
   input {
     font-size: 25px;
     height: 38px;
-    padding: 100px;
+    padding: 150px;
+    text-align: center;
   }
 
   .롱메 {
     font-size: 130px;
     height: 60px;
+     text-align: center;
   }
 
 .즉시{white-space: nowrap;
