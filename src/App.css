@@ -645,7 +645,7 @@ align-items: center;
   .진행전,
   .진행후 {
     width: 100%;          /* 화면 기준 */
-    max-width: 80px;     /* 모바일 안정 최대값 */
+    max-width: 50px;     /* 모바일 안정 최대값 */
     height: auto;
     margin: 0 auto;       /* 중앙 정렬 */
     margin-left: -50px;
@@ -671,7 +671,7 @@ width: 100%!important;
 }
 
 .플라스{
-margin-left: 80px;
+margin-left: 60px;
 width: 50px;
 }
 .시옷{
