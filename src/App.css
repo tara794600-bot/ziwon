@@ -849,9 +849,10 @@ padding-top: 25px;
 }
 
 @media (max-width: 768px) {
-  .박스 {
-    width: 90%;
-    max-width: 160px;
+  .박스,form {
+    width: 100%;
+    max-width: 360px;
+    scale: calc(0.7);
 
 
   }
