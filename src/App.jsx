@@ -9,6 +9,7 @@ import 진행전 from "./이미지/진행 전.png";
 import 진행후 from "./이미지/진행 후.png";
 import 화살표 from "./이미지/화살표.png";
 import 플라스 from "./이미지/플라스.png";
+import 첫세이브론 from "./이미지/첫세이브론.png";
 
 const data = [
   { product: "직장인대환대출", condition: "35세 / 직장인 / 신용점수 772점", amount: "7,811만원" },
@@ -69,7 +70,7 @@ export default function App() {
   return (
     <div className="app">
       {/* ================== HERO ================== */}
-      <header className="첫화면 hidden" > <img src={세이브} alt="세이브"className="세이브" />
+      <header className="첫화면 hidden" > <img src={세이브} alt="첫세이브론"className="세이브" />
         <div className="inner 첫화면-inner">
        
 
