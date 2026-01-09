@@ -859,12 +859,10 @@ margin-bottom: -50px;
 
   }
 
-.상담{
-padding: 60px;
-}
+
 label
 {
-font-size: 50px;
+font-size: 100px;
 }
 
 
@@ -876,12 +874,13 @@ font-size: 50px;
   }
 
   input {
-    font-size: 15px;
+    font-size: 35px;
     height: 38px;
+    padding: 50px;
   }
 
   .롱메 {
-    font-size: 40px;
+    font-size: 130px;
     height: 60px;
   }
 
