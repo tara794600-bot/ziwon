@@ -836,6 +836,32 @@ padding-top: 25px;
   font-size: 15px;
   font-weight: 700;
 }
+
+@media (max-width: 768px) {
+  .박스 {
+    padding: 24px;
+    margin: 0 16px;
+  }
+
+  .박스 h2 {
+    font-size: 20px;
+  }
+
+  input {
+    font-size: 15px;
+    height: 44px;
+  }
+
+  .롱메 {
+    font-size: 16px;
+    height: 48px;
+  }
+}
+
+
+
+
+
 /*사달락/
 
 
