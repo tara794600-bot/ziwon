@@ -678,7 +678,7 @@ width: 100%!important;
   left: 30px;
 margin-right: 10px;
 width: 50px;
-margin-top: -20px;
+margin-top: -10px;
 }
 
 
@@ -727,6 +727,13 @@ padding-bottom: 5px;
 padding-top: 50px;
 font-weight:700;
 }
+
+.진행1{
+font-size:30px;
+font-weight:700;
+
+}
+
 
 .본인{
 font-size: 20px;
