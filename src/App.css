@@ -856,13 +856,14 @@ padding-top: 25px;
   position: relative;
 right: 50px;    
 margin-bottom: -50px;
+ text-align: center;
 
   }
 
 
 .박스 label
 {
-font-size: 200px;
+font-size: 50px;
 }
 
 
