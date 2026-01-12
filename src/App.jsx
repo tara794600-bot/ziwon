@@ -280,7 +280,7 @@ const handleSubmit = async (e) => {
 <h2> 정확한 상담을 위한 </h2>
   <h2 className="사탕">고객정보를 입력해주세요.   </h2>
 
-<form >                      
+<form onSubmit={handleSubmit} >                      
   <div className="상담">
 <label>이름</label>
 <input type="text" placeholder="이름을 입력하세요."required pattern="^[가-힣]{2,4}$"title="이름은 한글 2~4자로 입력해주세요"/></div>
