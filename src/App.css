@@ -893,12 +893,11 @@ font-size: 30px;
     font-size: 150px;
     height: 80px;
      text-align: center;
-         margin-left: auto;
-    margin-right: 50px;
+    margin-right: -150px;
   }
 
 .즉시{white-space: nowrap;
- margin-right: 50px;
+ margin-right: -150px;
 
 
 }
