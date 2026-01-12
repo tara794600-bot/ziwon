@@ -434,6 +434,11 @@ align-items: center;
 color: #111111d2;
 }
 
+.조회묶음{
+position: relative;
+top: 25px;
+
+}
 
 
 
@@ -461,13 +466,6 @@ color: #111111d2;
     max-width: 320px;
   }
 
-  form
-  {
-position: relative;
-top: -100px;
-
-
-  }
 }
 
 
