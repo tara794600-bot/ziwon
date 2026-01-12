@@ -599,6 +599,7 @@ margin-left: 1px;
   width: 100%;
   }
 .석세스{
+  margin-top: 25px;
 font-size: 10px;
 }
 .담은{font-size: 20px;
@@ -884,7 +885,7 @@ font-size: 30px;
 
   input {
     font-size: 30px;
-    height: 42px;
+    height: 35px;
     padding: 40px!important;
     text-align: center;
     margin-left: auto;
