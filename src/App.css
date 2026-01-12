@@ -861,7 +861,7 @@ padding-top: 25px;
   position: relative;
 right: 50px;    
 height: 600px;
-margin-bottom: -100px !important;
+margin-bottom: -120px !important;
  text-align: center;
  transform-origin: top center;
 
@@ -894,7 +894,7 @@ font-size: 30px;
   .롱메 {
     margin-top: 80px!important;
     font-size:40px !important;
-    height: 800px;
+    height: 80px;
      text-align: center;
     margin-right: -150px;
     padding: 25px;
