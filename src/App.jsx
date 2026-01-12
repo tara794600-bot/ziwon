@@ -38,6 +38,21 @@ function scrollToSection(sectionId) {
 
 
 export default function App() {
+
+const fireConversion = () => {
+  if (typeof window.gtag !== "function") return;
+
+  window.gtag("event", "conversion", {
+    send_to: "AW-16682607415/LrmdCLeD-94bELfG8ZI-",
+    value: 1.0,
+    currency: "KRW",
+  });
+};
+
+
+
+
+
 const handleSubmit = async (e) => {
   e.preventDefault();
 
@@ -59,10 +74,12 @@ const handleSubmit = async (e) => {
     });
 
     const result = await response.json();
+if (response.ok) {
+  fireConversion(); // 🔥 여기
+  alert("신청이 정상적으로 접수되었습니다.");
+  form.reset();
 
-    if (response.ok) {
-      alert("신청이 정상적으로 접수되었습니다.");
-      form.reset();
+
     } else {
       alert("서버 오류: " + (result.error || "알 수 없는 오류"));
     }
