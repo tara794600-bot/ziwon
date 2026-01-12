@@ -433,11 +433,8 @@ font-weight:700;
 align-items: center;
 color: #111111d2;
 }
-.조회묶음
-{
-margin-bottom: -50px;
 
-}
+
 
 
 
@@ -462,6 +459,14 @@ margin-bottom: -50px;
   .진행전,
   .진행후 {
     max-width: 320px;
+  }
+
+  form
+  {
+position: relative;
+top: 25px;
+
+
   }
 }
 
