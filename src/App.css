@@ -883,7 +883,7 @@ font-size: 30px;
   input {
     font-size: 25px;
     height: 40px;
-    padding: 350px;
+    padding: 350px!important;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -900,7 +900,7 @@ font-size: 30px;
 
 .즉시{white-space: nowrap;
  margin-right: -150px;
- font-size: 30px;
+ font-size: 30px!important;
 
 
 }
