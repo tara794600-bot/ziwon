@@ -36,6 +36,63 @@ function scrollToSection(sectionId) {
 
 
 export default function App() {
+const handleSubmit = async (e) => {
+  e.preventDefault(); // 새로고침 방지
+
+  try {
+    const form = e.target;
+
+    const name = form
+      .querySelector("input[placeholder='이름을 입력하세요']")
+      .value.trim();
+
+    const phone = form
+      .querySelector("input[placeholder=\"'-'없이 입력해 주세요\"]")
+      .value.trim();
+
+    if (!name || !phone) {
+      alert("이름과 연락처를 모두 입력해주세요.");
+      return;
+    }
+
+    const data = { name, phone };
+
+    const response = await fetch("/api/api", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    const raw = await response.text();
+    console.log("서버 응답:", raw);
+
+    let result;
+    try {
+      result = JSON.parse(raw);
+    } catch {
+      result = { error: raw };
+    }
+
+    if (response.ok) {
+      alert("신청이 정상적으로 접수되었습니다.");
+      form.reset();
+    } else {
+      alert("서버 오류: " + (result.error || "알 수 없는 오류"));
+    }
+  } catch (error) {
+    console.error("🔥 fetch 오류:", error);
+    alert("서버 통신 오류가 발생했습니다. 잠시 후 다시 시도해주세요.");
+  }
+};
+
+
+
+
+
+
+
+
+
 
   useEffect(() => {
 
