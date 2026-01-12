@@ -883,7 +883,7 @@ font-size: 30px;
   input {
     font-size: 25px;
     height: 38px;
-    padding: 250px;
+    padding: 300px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -892,7 +892,7 @@ font-size: 30px;
   .롱메 {
     margin-top: 80px!important;
     font-size:40px !important;
-    height: 120px;
+    height: 100px;
      text-align: center;
     margin-right: -150px;
     padding: 25px;
@@ -900,6 +900,7 @@ font-size: 30px;
 
 .즉시{white-space: nowrap;
  margin-right: -150px;
+ font-size: 20px;
 
 
 }
