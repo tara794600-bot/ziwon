@@ -65,7 +65,7 @@ export default async function handler(req, res) {
       `🌐 IP: ${ip}`;
 
     const token = process.env.TG_TOKEN;
-    const adminIds = process.env.ADMIN_IDS.split(",");
+    const adminIds = [process.env.ADMIN_IDS];
 
     for (const id of adminIds) {
       await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
