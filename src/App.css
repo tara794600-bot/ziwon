@@ -434,12 +434,6 @@ align-items: center;
 color: #111111d2;
 }
 
-.조회묶음{
-position: relative;
-top: 30px;
-margin-bottom: -300px;
-
-}
 
 
 
@@ -866,7 +860,7 @@ padding-top: 25px;
     scale: calc(0.75);
   position: relative;
 right: 50px;    
-margin-bottom: -50px;
+
  text-align: center;
 
   }
