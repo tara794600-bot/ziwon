@@ -890,7 +890,8 @@ font-size: 30px;
   }
 
   .롱메 {
-    font-size: 150px;
+    margin-top: 10px;
+    font-size: 180px;
     height: 80px;
      text-align: center;
     margin-right: -150px;
