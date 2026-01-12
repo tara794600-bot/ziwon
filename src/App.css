@@ -894,11 +894,11 @@ font-size: 30px;
     height: 80px;
      text-align: center;
          margin-left: auto;
-    margin-right: auto;
+    margin-right: 50px;
   }
 
 .즉시{white-space: nowrap;
-
+ margin-right: 50px;
 
 
 }
