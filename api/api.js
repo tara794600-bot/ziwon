@@ -3,6 +3,7 @@ import { getFirestore } from "firebase-admin/firestore";
 
 // Firestore Admin 초기화 (중복 방지)
 if (!getApps().length) {
+  console.log("🔥 Firebase Admin 초기화 시작");
   const serviceAccount = JSON.parse(process.env.FIREBASE_ADMIN_KEY);
   initializeApp({
     credential: cert(serviceAccount),
@@ -12,33 +13,44 @@ if (!getApps().length) {
 const db = getFirestore();
 
 export default async function handler(req, res) {
-  if (req.method !== "POST")
+  console.log("🚀 API 호출됨:", req.method);
+
+  if (req.method !== "POST") {
+    console.log("❌ POST 아님");
     return res.status(405).json({ error: "POST only" });
+  }
 
   try {
     const { name, phone } = req.body;
+    console.log("📥 받은 데이터:", { name, phone });
 
-    // 🔥 필수값 체크 (이름 + 연락처만)
-    if (!name || !phone)
+    if (!name || !phone) {
+      console.log("❌ 입력값 부족");
       return res.status(400).json({ error: "입력값 부족" });
+    }
 
-    // 🔥 1) IP 추출
+    // 🔥 IP 추출
     const ip =
       req.headers["x-forwarded-for"]?.split(",")[0] ||
       req.socket?.remoteAddress ||
       "unknown";
 
-    // 🔥 2) 화이트리스트 확인
+    console.log("🌐 IP:", ip);
+
+    // 🔥 화이트리스트
     const whiteList = process.env.IP_WHITELIST
       ? process.env.IP_WHITELIST.split(",").map((v) => v.trim())
       : [];
 
     const isWhiteListed = whiteList.includes(ip);
+    console.log("✅ 화이트리스트 여부:", isWhiteListed);
 
-    // 🔥 3) 화이트리스트가 아니면 → 중복 접수 차단
     if (!isWhiteListed) {
       const ipDoc = await db.collection("ipRecords").doc(ip).get();
+      console.log("📄 IP 기록 존재:", ipDoc.exists);
+
       if (ipDoc.exists) {
+        console.log("⛔ 중복 IP 차단");
         return res.status(403).json({
           error: "이미 신청이 완료된 IP입니다.",
         });
@@ -47,9 +59,11 @@ export default async function handler(req, res) {
       await db.collection("ipRecords").doc(ip).set({
         createdAt: new Date(),
       });
+
+      console.log("📝 IP 기록 저장 완료");
     }
 
-    // 🔥 4) Firestore 저장
+    // 🔥 Firestore 저장
     await db.collection("consultRequests").add({
       name,
       phone,
@@ -57,35 +71,57 @@ export default async function handler(req, res) {
       createdAt: new Date(),
     });
 
-    // 🔥 5) 텔레그램 관리자 알림
+    console.log("💾 상담 데이터 저장 완료");
+
+    // 🔥 텔레그램 알림
+    const token = process.env.TG_TOKEN;
+    const adminIds = [process.env.ADMIN_IDS];
+
+    console.log("📨 텔레그램 토큰 존재:", !!token);
+    console.log("📨 관리자 ID:", adminIds);
+
     const text =
       "📢 신규 접수 알림\n\n" +
       `👤 이름: ${name}\n` +
       `📱 연락처: ${phone}\n` +
       `🌐 IP: ${ip}`;
 
-    const token = process.env.TG_TOKEN;
-    const adminIds = [process.env.ADMIN_IDS];
-
     for (const id of adminIds) {
-      await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          chat_id: id,
-          text,
-        }),
-      });
+      console.log("➡️ 텔레그램 전송 시도:", id);
+
+      const tgRes = await fetch(
+        `https://api.telegram.org/bot${token}/sendMessage`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            chat_id: id,
+            text,
+          }),
+        }
+      );
+
+      const tgResult = await tgRes.json();
+      console.log("📬 텔레그램 응답:", tgResult);
+
+      if (!tgResult.ok) {
+        throw new Error(
+          "텔레그램 전송 실패: " + tgResult.description
+        );
+      }
     }
 
-    // 🔥 6) Google Sheets 저장
+    // 🔥 Google Sheets
     if (process.env.SHEET_ID) {
+      console.log("📊 Google Sheets 저장 시작");
       await saveToSheet({ name, phone });
+      console.log("📊 Google Sheets 저장 완료");
     }
 
+    console.log("✅ 전체 처리 완료");
     return res.status(200).json({ success: true });
   } catch (err) {
-    console.error("Error:", err);
+    console.error("🔥 서버 에러:", err);
     return res.status(500).json({ error: err.message });
   }
 }
