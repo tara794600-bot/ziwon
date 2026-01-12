@@ -213,7 +213,7 @@ export default function App() {
       {/* ================== 신청 섹션 ================== */}
       <section className="신청 hidden"id="롱메">
         <div className="inner 신청-inner">
-          <h2 className="채무">채무통합 솔루션이 필요하세요?</h2>
+          <h2 className="채무 scale-up">채무통합 솔루션이 필요하세요?</h2>
           <div className="조회묶음">
             <p className="조회">신용조회 없는 1분 상담으로</p>
             <p className="조회">높은금리의 대출이자를 절반 이하로 줄여보세요.</p>
