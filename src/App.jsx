@@ -39,41 +39,26 @@ function scrollToSection(sectionId) {
 
 export default function App() {
 const handleSubmit = async (e) => {
-  e.preventDefault(); // 새로고침 방지
+  e.preventDefault();
 
   try {
     const form = e.target;
 
-    const name = form
-      .querySelector("input[placeholder='이름을 입력하세요']")
-      .value.trim();
-
-    const phone = form
-      .querySelector("input[placeholder=\"'-'없이 입력해 주세요\"]")
-      .value.trim();
+    const name = form.elements.name.value.trim();
+    const phone = form.elements.phone.value.trim();
 
     if (!name || !phone) {
       alert("이름과 연락처를 모두 입력해주세요.");
       return;
     }
 
-    const data = { name, phone };
-
     const response = await fetch("/api/api", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
+      body: JSON.stringify({ name, phone }),
     });
 
-    const raw = await response.text();
-    console.log("서버 응답:", raw);
-
-    let result;
-    try {
-      result = JSON.parse(raw);
-    } catch {
-      result = { error: raw };
-    }
+    const result = await response.json();
 
     if (response.ok) {
       alert("신청이 정상적으로 접수되었습니다.");
@@ -81,9 +66,9 @@ const handleSubmit = async (e) => {
     } else {
       alert("서버 오류: " + (result.error || "알 수 없는 오류"));
     }
-  } catch (error) {
-    console.error("🔥 fetch 오류:", error);
-    alert("서버 통신 오류가 발생했습니다. 잠시 후 다시 시도해주세요.");
+  } catch (err) {
+    console.error("🔥 fetch 오류:", err);
+    alert("서버 통신 오류가 발생했습니다.");
   }
 };
 
@@ -283,11 +268,11 @@ const handleSubmit = async (e) => {
 <form onSubmit={handleSubmit} >                      
   <div className="상담">
 <label>이름</label>
-<input type="text" placeholder="이름을 입력하세요."required pattern="^[가-힣]{2,4}$"title="이름은 한글 2~4자로 입력해주세요"/></div>
+<input type="text"  name="name" placeholder="이름을 입력하세요."required pattern="^[가-힣]{2,4}$"title="이름은 한글 2~4자로 입력해주세요"/></div>
 
 <div className="상담">
 <label>연락처</label>
-<input type="tel" placeholder="연락처를 입력하세요."required pattern="^010[0-9]{4}[0-9]{4}$"title="010XXXXXXXX 형식으로 입력해주세요"/>
+<input type="tel" name="phone" placeholder="연락처를 입력하세요."required pattern="^010[0-9]{4}[0-9]{4}$"title="010XXXXXXXX 형식으로 입력해주세요"/>
   </div>
 
  <button className="롱메"  type="submit">무료 상담신청</button>
