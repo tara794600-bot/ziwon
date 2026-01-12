@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./App.css";
 import { useEffect} from 'react';
 import 상담신청 from "./이미지/상담신청.png";
