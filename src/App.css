@@ -886,7 +886,7 @@ font-size: 30px;
   input {
     font-size: 28px;
     height: 30px;
-    padding: 40px!important;
+    padding: 35px 60px   !important;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
